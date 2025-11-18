@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    background: #001f3f; /* Navy blue */
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #cross {
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d4af37; /* Gold */
+    border-radius: 6px;
+    box-shadow: 0 0 25px #d4af37;
+  }
+
+  #cross::after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 55px;
+    background: #d4af37;
+    left: 50%;
+    top: 150px; /* 3/4th down the vertical line */
+    transform: translateX(-50%);
+    border-radius: 6px;
+    box-shadow: 0 0 25px #d4af37;
+  }
+</style>
+</head>
+<body>
+
+<div id="cross"></div>
+
+</body>
+</html>
